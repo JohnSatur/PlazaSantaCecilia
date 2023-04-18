@@ -10,6 +10,17 @@ export class DirectorioComponent {
 
   cards: Card[] = [
     {
+      nombre: 'Liverpool Click & Collect',
+      descripcion: 'Tienda departamental',
+      socialLinks: {
+        facebook: 'https://facebook.com',
+        instagram: 'https://instagram.com',
+        website: 'https://powercenterxanat.com',
+        tiktok: 'https://tiktok.com'
+      },
+      bgImg: 'liverpool-c&c-1.jpg'
+    },
+    {
       nombre: 'Casa Ahued',
       descripcion: 'Tienda de artículos para el hogar',
       socialLinks: {
@@ -21,15 +32,15 @@ export class DirectorioComponent {
       bgImg: 'casa-ahued-1.jpg'
     },
     {
-      nombre: 'Bodegón de Semillas',
-      descripcion: 'Abarrotes',
+      nombre: 'Comex',
+      descripcion: 'Tienda de pintura',
       socialLinks: {
         facebook: 'https://facebook.com',
         instagram: 'https://instagram.com',
         website: 'https://powercenterxanat.com',
         tiktok: 'https://tiktok.com'
       },
-      bgImg: 'bodegon-de-semillas-1.jpg'
+      bgImg: 'comex-1.jpg'
     },
     {
       nombre: 'Bola de Oro',
@@ -43,16 +54,17 @@ export class DirectorioComponent {
       bgImg: 'bola-de-oro-1.jpg'
     },
     {
-      nombre: 'Liverpool Click & Collect',
-      descripcion: 'Tienda departamental',
+      nombre: 'Bodegón de Semillas',
+      descripcion: 'Abarrotes',
       socialLinks: {
         facebook: 'https://facebook.com',
         instagram: 'https://instagram.com',
         website: 'https://powercenterxanat.com',
         tiktok: 'https://tiktok.com'
       },
-      bgImg: 'liverpool-c&c-1.jpg'
+      bgImg: 'bodegon-de-semillas-1.jpg'
     },
+    
     {
       nombre: 'El Iris',
       descripcion: 'Papelería',
@@ -63,6 +75,28 @@ export class DirectorioComponent {
         tiktok: 'https://tiktok.com'
       },
       bgImg: 'el-iris-1.jpg'
+    },
+    {
+      nombre: 'Super Fasti',
+      descripcion: 'Abarrotes',
+      socialLinks: {
+        facebook: 'https://facebook.com',
+        instagram: 'https://instagram.com',
+        website: 'https://powercenterxanat.com',
+        tiktok: 'https://tiktok.com'
+      },
+      bgImg: 'fasti-1.jpg'
+    },
+    {
+      nombre: 'Look',
+      descripcion: 'Artículos de belleza',
+      socialLinks: {
+        facebook: 'https://facebook.com',
+        instagram: 'https://instagram.com',
+        website: 'https://powercenterxanat.com',
+        tiktok: 'https://tiktok.com'
+      },
+      bgImg: 'look-1.jpg'
     },
     {
       nombre: 'Cervecería Chapultepec',
@@ -85,17 +119,6 @@ export class DirectorioComponent {
         tiktok: 'https://tiktok.com'
       },
       bgImg: 'oriental-wok-1.jpg'
-    },
-    {
-      nombre: 'Super Fasti',
-      descripcion: 'Abarrotes',
-      socialLinks: {
-        facebook: 'https://facebook.com',
-        instagram: 'https://instagram.com',
-        website: 'https://powercenterxanat.com',
-        tiktok: 'https://tiktok.com'
-      },
-      bgImg: 'fasti-1.jpg'
     },
     {
       nombre: 'Hercón Coatepec',
@@ -140,17 +163,6 @@ export class DirectorioComponent {
         tiktok: 'https://tiktok.com'
       },
       bgImg: 'boxis-1.jpg'
-    },
-    {
-      nombre: 'Look',
-      descripcion: 'Artículos de belleza',
-      socialLinks: {
-        facebook: 'https://facebook.com',
-        instagram: 'https://instagram.com',
-        website: 'https://powercenterxanat.com',
-        tiktok: 'https://tiktok.com'
-      },
-      bgImg: 'look-1.jpg'
     }
   ];
 }
