@@ -1,0 +1,66 @@
+<div class="main">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Directorio</h1>
+            <img src="../../../assets/img/directorio-bg.jpg" alt="Fachada de Plaza Santa Cecilia" class="hero__bg">
+            <div class="layer"></div>
+        </div>
+    </section>
+
+    <!-- Plano -->
+    <section class="plan">
+        <div class="plan__container">
+            <img src="../../../assets/img/plano-santa-cecilia.png" alt="Plano de Plaza Santa Cecilia" class="plan__img">
+        </div>
+    </section>
+
+    <!-- Directorio -->
+    <section class="directorio">
+        <div class="directorio__container">
+            <div class="directorio__copy">
+                <h1 class="directorio__title title">Lo que necesitas, todo en Santa Cecilia</h1>
+
+                <p class="directorio__description text">Entretenimiento, compras, servicios, restaurantes y muchas cosas más. Seguro tenemos lo que estás buscando.</p>
+            </div>
+
+            <div class="directorio__cards">
+                <app-card *ngFor="let card of cards" [titulo]="card.nombre" [descripcion]="card.descripcion" [socialLinks]="card.socialLinks" [bgImg]="card.bgImg"></app-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact">
+        <h2 class="contact__title title">¿Buscas un negocio en particular?</h2>
+        <div class="contact__container">
+            <div class="contact__info">
+                <h3 class="contact__subtitle">Escríbenos o contáctanos. Con gusto te ayudaremos</h3>
+                <p class="contact__description">Estaremos encantados de atenderte a la brevedad.</p>
+
+                <div class="contact__links">
+                    <a class="contact__link" href="https://www.google.com/maps/dir/21.1550208,-101.646336/plaza+santa+cecilia+coatepec/" target="_blank">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span class="link-text">Centenario 3, Centro, 91150 Coatepec, Ver.</span>
+                    </a>
+                    <a class="contact__link" href="mailto:info@plazasantacecilia.com" target="_blank">
+                        <i class="ri-mail-send-line"></i>
+                        <span class="link-text">info@plazasantacecilia.com</span>
+                    </a>
+                    <a class="contact__link" href="tel:2288351479">
+                        <i class="ri-phone-fill"></i>
+                        <span class="link-text">228 835 1479</span>
+                    </a>
+                </div>
+            </div>
+
+            <form action="" class="contact__form">
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre...">
+                <input type="email" name="correo" id="correo" placeholder="Tu correo...">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje..."></textarea>
+
+                <button type="submit" class="dark-button">ENVIAR <i class="ri-mail-send-line"></i></button>
+            </form>
+        </div>
+    </section>
+</div>

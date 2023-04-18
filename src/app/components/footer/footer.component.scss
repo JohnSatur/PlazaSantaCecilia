@@ -1,0 +1,59 @@
+.footer {
+  @apply bg-primary text-white;
+
+  .footer__container {
+    @apply px-5 py-12 flex flex-col gap-8 md:flex-row;
+
+    .footer__info {
+      @apply flex flex-col gap-4 md:grow md:w-2/3;
+
+      .footer__text {
+        @apply flex flex-col gap-2;
+
+        .footer__title {
+          @apply text-xl font-medium;
+        }
+
+        .footer__description {
+          @apply text-xs md:text-base font-extralight text-slate-300;
+        }
+      }
+
+      .footer__social {
+        @apply flex items-center gap-1 lg:gap-4;
+
+        i {
+          @apply text-xl md:text-2xl;
+        }
+      }
+    }
+
+    .footer__menu {
+      @apply flex flex-col gap-2 md:grow-2 md:w-1/12;
+
+      .menu-title {
+        @apply text-lg font-medium;
+      }
+
+      .footer__menu-list {
+        @apply text-sm font-extralight text-slate-100 flex flex-col gap-1;
+      }
+    }
+
+    .footer__legal-links {
+      @apply flex flex-col gap-2 md:grow md:items-end md:w-3/12;
+    }
+  }
+
+  .footer__copy {
+    @apply text-lightTextDark border-t border-tertiary px-5 py-6 flex flex-col gap-3;
+
+    p {
+      @apply text-sm text-center;
+
+      a {
+        @apply font-semibold;
+      }
+    }
+  }
+}

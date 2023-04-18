@@ -1,0 +1,99 @@
+.header {
+    @apply fixed w-full bg-lightPrimary top-0 left-0 z-10;
+    // z-index, transition: background .4s
+}
+
+.contact-bar {
+    @apply bg-primary hidden md:block;
+}
+
+.contact-bar__container {
+    @apply container flex justify-between mx-auto px-5 py-1;
+}
+
+.contact-bar__contact,
+.contact-bar__social {
+    @apply text-slate-100 flex gap-5 items-center;
+}
+
+.contact-bar__link {
+    @apply flex items-center gap-1 text-sm;
+
+    i {
+        @apply text-lg;
+    }
+}
+
+.bg-header {
+    @apply shadow-md;
+}
+
+.nav {
+    @apply container mx-auto relative h-14 flex px-5 justify-between items-center;
+}
+
+.nav__logo, .nav__toggle, .nav__close {
+    @apply flex text-primary;
+}
+
+
+.nav__logo img {
+    @apply h-12;
+}
+
+.nav__toggle {
+    @apply text-xl cursor-pointer;
+}
+
+.nav__list {
+    @apply flex flex-col text-center gap-y-5 py-5 md:gap-5 md:p-0 md:flex-row;
+}
+
+.nav__link {
+    @apply text-primary font-normal transition-all md:font-medium;
+
+    &:hover {
+        @apply font-semibold;
+    }
+
+    &:active {
+        @apply font-bold;
+    }
+}
+
+.nav__close {
+    @apply absolute top-4 right-5 text-2xl text-primary cursor-pointer;
+}
+
+.nav__toggle,
+.nav__close {
+    @apply md:hidden;
+}
+
+.nav__img {
+    @apply absolute -top-10 -left-10 md:hidden;
+
+    img.motivo {
+        @apply w-36 opacity-50;
+    }
+}
+
+.nav__menu {
+    @apply fixed left-0 -top-full md:static bg-lightPrimary w-full md:w-auto pt-10 shadow-md md:shadow-none md:pt-0;
+    transition: top .4s;
+
+    .nav__social {
+        @apply border-t-2 border-primary flex justify-center gap-3 py-5 md:hidden;
+
+        .nav__icon {
+            i {
+                @apply text-darkPrimary text-2xl;
+            }
+        }
+    }
+}
+
+// Mostrar menú
+.show-menu {
+    @apply top-0;
+}

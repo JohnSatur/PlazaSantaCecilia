@@ -1,0 +1,239 @@
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+// Hero
+.hero {
+  @apply relative h-screen;
+}
+
+// .bg-video {
+//   @apply absolute top-0 left-0 w-full h-screen object-cover -z-10;
+// }
+
+.hero-img {
+    @apply absolute top-0 left-0 w-full h-screen object-cover -z-10;
+  }
+
+.layer {
+  @apply absolute top-0 left-0 w-full h-screen bg-stone-900 opacity-50 -z-10;
+}
+
+// About
+.about {
+  @apply py-10;
+  // relative
+}
+
+.about__container {
+  @apply container px-5 grid gap-y-12 mx-auto lg:flex gap-10;
+}
+
+.about__img {
+  @apply justify-self-center rounded-md shadow-lg lg:w-1/2;
+}
+
+.about__data {
+  @apply text-center flex flex-col items-center gap-2 lg:justify-center;
+}
+
+.about__title {
+  @apply text-center leading-tight;
+}
+
+.about__description {
+  @apply px-0 py-1 text-darkPrimary leading-loose;
+}
+
+.button {
+  @apply px-10 py-3 mt-4 bg-primary text-white rounded-2xl font-semibold text-sm;
+}
+
+// Negocios
+.negocios__container {
+  @apply container px-5 mx-auto pb-10;
+}
+
+.negocios__title {
+  @apply text-2xl md:text-3xl lg:text-4xl text-center font-bold;
+}
+
+.negocios__slider {
+  @apply my-5;
+
+  .negocios__logo {
+    @apply px-2 w-12;
+
+    svg {
+      @apply text-primary md:w-24;
+    }
+  }
+}
+
+// Features
+.features {
+  @apply py-10 relative;
+}
+
+.features__container {
+  @apply container px-5 mx-auto flex flex-col md:gap-3 md:flex-row lg:gap-10 lg:justify-between;
+}
+
+.features__text {
+  @apply md:w-1/2 flex flex-col gap-3;
+}
+
+.features__title {
+  @apply text-center text-slate-100 md:text-left;
+}
+
+.features__description {
+  @apply px-0 pt-2 pb-8 text-slate-300 text-center md:text-left text-lg md:text-2xl;
+}
+
+.features__cards {
+  @apply flex flex-col gap-6 md:w-1/2 lg:w-1/3 md:self-end;
+}
+
+.features__card {
+  @apply relative bg-primary rounded-lg py-12 pr-4 pl-24 shadow-md;
+
+  .card-title {
+    @apply text-xl mb-4 font-bold text-slate-100;
+  }
+
+  .card-text {
+    @apply text-slate-300 leading-relaxed;
+  }
+
+  .card-icon {
+    @apply text-white absolute top-5 left-5 text-6xl;
+  }
+}
+
+.features__background {
+  @apply absolute top-0 left-0 -z-10 h-full w-auto object-cover;
+}
+
+.features__layer {
+  @apply absolute top-0 left-0 w-full -z-10 h-full opacity-80 bg-slate-800;
+}
+
+// Testimonials
+.testimonial {
+  @apply py-10;
+}
+
+.testimonial__container {
+  @apply px-5 mx-auto;
+}
+
+.testimonial__title {
+  @apply text-center mb-5;
+}
+
+.testimonial__slider {
+  @apply w-full overflow-hidden flex justify-center items-center md:w-2/3 lg:w-1/2;
+
+  .swiper-slide {
+    @apply bg-primary px-8 py-12 flex flex-col items-center rounded-lg lg:p-16;
+
+    .testimonial-text {
+      @apply text-slate-300 text-center lg:text-2xl;
+    }
+
+    .testimonial-name {
+      @apply font-medium text-center block pt-5 text-slate-100 font-title text-xl lg:text-2xl;
+    }
+
+    .testimonial-job {
+      @apply text-center block text-slate-100 text-sm md:text-base;
+    }
+
+    .testimonial-img {
+      @apply mt-20 w-28;
+    }
+  }
+}
+
+// Mapa
+.map {
+  @apply py-10;
+
+  .map__container {
+    @apply px-5 mx-auto container;
+
+    .map__googleMaps {
+      @apply w-full h-[70vh];
+    }
+  }
+}
+
+// Contact
+.contact {
+  @apply py-10;
+}
+
+.contact__container {
+  @apply container px-5 flex flex-col gap-8 mx-auto md:flex-row;
+}
+
+.contact__title {
+  @apply text-center md:mb-10;
+}
+
+.contact__info {
+  @apply flex flex-col gap-2 md:w-1/3;
+
+  .contact__subtitle {
+    @apply font-medium text-lg font-title text-darkPrimary md:text-xl lg:text-3xl;
+  }
+
+  .contact__description {
+    @apply text-primary;
+  }
+}
+
+.contact__links {
+  @apply flex flex-col gap-1 md:gap-4 mt-4;
+
+  .contact__link {
+    @apply flex items-center gap-1 md:gap-2 lg:gap-3;
+
+    .link-text {
+      @apply text-sm md:text-base lg:text-lg text-darkPrimary;
+    }
+
+    i {
+      @apply text-lg md:text-xl lg:text-2xl text-primary;
+    }
+  }
+}
+
+.contact__form {
+  @apply flex flex-col gap-3 md:w-2/3;
+
+  input[type=text], input[type=email], textarea {
+    @apply p-2 border-[1px] border-primary rounded-lg text-darkPrimary;
+
+    &:focus {
+      @apply border-2;
+    }
+
+    &::placeholder {
+      @apply text-primary;
+    }
+  }
+
+  textarea {
+    @apply max-h-72 min-h-[10rem];
+  }
+
+  button[type=submit] {
+    @apply flex justify-center items-center gap-2;
+
+    i {
+      @apply text-base;
+    }
+  }
+}

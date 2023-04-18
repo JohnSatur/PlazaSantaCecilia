@@ -1,0 +1,45 @@
+// Hero
+.hero {
+    @apply h-screen relative;
+
+    .hero__container {
+        @apply container px-5 h-screen mx-auto flex justify-center items-center;
+
+        .hero__title {
+            @apply text-white text-7xl font-bold;
+        }
+
+        .hero__bg {
+            @apply absolute top-0 left-0 w-full object-cover h-screen -z-10;
+        }
+
+        .layer {
+            @apply absolute top-0 left-0 w-full h-screen bg-stone-900 opacity-50 -z-10;
+        }
+    }
+}
+
+// Galería
+.gallery {
+    @apply py-5;
+
+    .gallery__container {
+        @apply px-5 flex flex-col gap-5;
+
+        .gallery__title {
+            @apply text-center;
+        }
+
+        .gallery__imgs {
+            @apply columns-1 md:columns-2 lg:columns-3;
+
+            .gallery__img {
+                @apply w-full h-auto mx-auto my-5 shadow-lg shadow-slate-800 cursor-pointer transition-all;
+
+                &:first-child {
+                    @apply mt-0;
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply box-border p-0 m-0;
+}
+
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply font-primary text-base bg-lightPrimary text-strongText;
+}
+
+::-webkit-scrollbar {
+    @apply w-2 rounded-lg bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-tertiary rounded-lg;
+
+    &:hover {
+        @apply bg-primary;
+    }
+}
+
+h1, h2, h3 {
+    @apply font-medium;
+}
+
+ul {
+    @apply list-none;
+}
+
+a {
+    @apply no-underline;
+}
+
+input:focus, textarea:focus {
+    @apply outline-none;
+
+    &:autofill {
+        @apply border-4 border-strongText;
+    }
+
+    &:-webkit-autofill {
+        @apply border-4 border-strongText;
+    }
+}
+
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }
+
+@layer components {
+    .title {
+        @apply text-3xl md:text-5xl font-title text-darkPrimary tracking-wide;
+    }
+
+    .text {
+        @apply text-base md:text-lg;
+    }
+
+    .light-button {
+        @apply px-10 py-4 mt-4 bg-white text-darkPrimary rounded-full font-semibold text-sm;
+    }
+
+    .dark-button {
+        @apply px-10 py-4 mt-4 bg-primary text-white rounded-full font-semibold text-sm;
+    }
+}
