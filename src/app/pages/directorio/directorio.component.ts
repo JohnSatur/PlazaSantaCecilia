@@ -24,9 +24,9 @@ export class DirectorioComponent {
       nombre: 'Casa Ahued',
       descripcion: 'Tienda de artículos para el hogar',
       socialLinks: {
-        facebook: 'https://facebook.com',
+        facebook: 'https://www.facebook.com/CasaAhued',
         instagram: 'https://instagram.com',
-        website: 'https://powercenterxanat.com',
+        website: 'https://tiendaenlinea.casaahued.com/mx/tiendas',
         tiktok: 'https://tiktok.com'
       },
       bgImg: 'casa-ahued-1.jpg'
