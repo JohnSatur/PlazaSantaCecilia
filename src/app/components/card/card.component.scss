@@ -26,6 +26,10 @@
       a {
         @apply text-2xl text-slate-100 flex items-center w-6;
       }
+
+      svg path {
+        @apply fill-slate-100;
+      }
     }
   }
 }
